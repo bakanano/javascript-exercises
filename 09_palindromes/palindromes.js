@@ -1,4 +1,9 @@
-const palindromes = function () {
+const palindromes = function (string) {
+    let newString = string.replace(/\W/g, "").toLowerCase()
+    let wordArray = newString.split("");
+    let reversedWord = wordArray.reverse().join("");
+    return newString == reversedWord;
+
 
 };
 
